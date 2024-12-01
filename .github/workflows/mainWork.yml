@@ -29,8 +29,3 @@ jobs:
       run: |
         docker build -t ${{ secrets.ACR_USERNAME }}.azurecr.io/my-image:latest .
         docker push ${{ secrets.ACR_USERNAME }}.azurecr.io/my-image:latest
-
-
-    branches:
-      - main
-  workflow_dispatch:  # Trigger manuale dal UI
